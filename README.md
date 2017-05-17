@@ -31,7 +31,7 @@ If you don't know how to configure your ionic app, you can take a look here: [Se
 
 ## How to use:
 
-- Push API
+- [Push API](https://github.com/tomloprod/ionic-cloud-php/wiki/Push-API)
 - Deploy API
 - Auth API
 
