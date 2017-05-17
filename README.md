@@ -14,6 +14,8 @@ Ionic official documentation: [Ionic HTTP API - Push](https://docs.ionic.io/api/
 - PHP 5.1+
 - cURL
 
+## Documentation:
+
 See the [WIKI](https://github.com/tomloprod/ionic-cloud-php/wiki) for documentation
 
 
