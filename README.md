@@ -7,7 +7,6 @@
 
 ionic-push-php is a library that allows you to consume the *Ionic Cloud API* for **sending push notifications** (*normal and scheduled*), get a paginated **list of sending push notifications**,  get **information of registered devices**, **remove registered devices by token**, ...
 
-Ionic official documentation: [Ionic HTTP API - Push](https://docs.ionic.io/api/endpoints/push.html).
 
 ## Requirements:
 
@@ -16,7 +15,13 @@ Ionic official documentation: [Ionic HTTP API - Push](https://docs.ionic.io/api/
 
 ## Documentation:
 
-See the [WIKI](https://github.com/tomloprod/ionic-cloud-php/wiki) for documentation
+See the [WIKI](https://github.com/tomloprod/ionic-cloud-php/wiki) for this library documentation.
+
+Ionic official API documentation:
+
+- [Push](https://docs.ionic.io/api/endpoints/push.html)
+- [Deploy](https://docs.ionic.io/api/endpoints/deploy.html)
+- [Auth](https://docs.ionic.io/api/endpoints/auth.html)
 
 
 ## Contributing:
