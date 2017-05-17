@@ -14,26 +14,7 @@ Ionic official documentation: [Ionic HTTP API - Push](https://docs.ionic.io/api/
 - PHP 5.1+
 - cURL
 
-## Installation:
-
-    composer require tomloprod/ionic-push-php
-
-## Configuration:
-
-First, make sure you have your `$ionicAPIToken` and your `$ionicProfile`:
-
-- (string) **$ionicAPIToken:** The API token that you must create in *Settings › API Keys* in the [Dashboard](https://apps.ionic.io).
-- (string) **$ionicProfile:** The Security Profile tag found in *Settings › Certificates* in the [Dashboard](https://apps.ionic.io)
-
-> More information [here](https://github.com/tomloprod/ionic-push-php/issues/1).
-
-If you don't know how to configure your ionic app, you can take a look here: [Setup Ionic Push](http://docs.ionic.io/services/push/#setup)
-
-## How to use:
-
-- [Push API](https://github.com/tomloprod/ionic-cloud-php/wiki/Push-API)
-- Deploy API
-- Auth API
+See the [WIKI](https://github.com/tomloprod/ionic-cloud-php/wiki) for documentation
 
 
 ## Contributing:
