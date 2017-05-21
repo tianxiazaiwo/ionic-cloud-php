@@ -1,6 +1,6 @@
 {
   "name": "ionic-cloud-php",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ionic-cloud-php is a library that allows you to consume the Ionic Cloud API: Push, Auth and Deploy.",
   "author": "Tomas Lopez",
   "contributors": [{
