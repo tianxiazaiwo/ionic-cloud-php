@@ -16,7 +16,7 @@ class Auth extends Request {
 
     private static $endPoints = [
         'list' => '/users', // GET
-        'create' => '/users' // POST
+        'create' => '/users', // POST
         'retrieve' => '/users/:user_uuid', // GET
         'retrieveCustom' => '/users/:user_uuid/custom', // GET
         'replaceCustom' => '/users/:user_uuid/custom', // PUT
