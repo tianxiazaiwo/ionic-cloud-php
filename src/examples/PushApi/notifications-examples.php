@@ -1,11 +1,11 @@
 <?
-use Tomloprod\IonicApi\Exception\RequestException;
-use Tomloprod\IonicApi\Push;
+use Tomloprod\IonicCloud\Exception\RequestException;
+use Tomloprod\IonicCloud\IonicCloudApi;
 
 $ionicProfile = "yourIonicProfile";
-$ionicAPIToken = "youtIonicApiToken";
+$IonicCloudToken = "youtIonicCloudToken";
 
-$ionicPushApi = new Push($ionicProfile, $ionicAPIToken);
+$ionicCloudApi = new IonicCloudApi($ionicProfile, $IonicCloudToken);
 ?>
 
 <h1>List all notifications and get data:</h1>
@@ -14,7 +14,7 @@ $ionicPushApi = new Push($ionicProfile, $ionicAPIToken);
     <?
     try {
 
-        $response = $ionicPushApi->notifications->paginatedList([
+        $response = $ionicCloudApi->push->notifications->paginatedList([
             'page_size' => 10,
             'page' => 1
         ]);
@@ -47,7 +47,7 @@ $ionicPushApi = new Push($ionicProfile, $ionicAPIToken);
     <?
     try {
 
-        $response = $ionicPushApi->notifications->retrieve("e5aaf...");
+        $response = $ionicCloudApi->push->notifications->retrieve("e5aaf...");
 
         ?>
         <li>

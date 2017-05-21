@@ -1,6 +1,8 @@
 <?php
 
-namespace Tomloprod\IonicApi\Api;
+namespace Tomloprod\IonicCloud\PushApi;
+
+use Tomloprod\IonicCloud\Request;
 
 /**
  * Class Notifications
@@ -8,7 +10,7 @@ namespace Tomloprod\IonicApi\Api;
  * Stores ionic push api methods related to notifications collection.
  * More info: https://docs.ionic.io/api/endpoints/push.html
  *
- * @package Tomloprod\IonicApi\Api
+ * @package Tomloprod\IonicCloud\PushApi
  * @author Tomás L.R (@tomloprod)
  * @author Ramon Carreras (@ramoncarreras)
  */
@@ -29,11 +31,11 @@ class Notifications extends Request {
      * Notifications constructor.
      *
      * @param string $ionicProfile
-     * @param string $ionicAPIToken
+     * @param string $IonicCloudToken
      */
-    public function __construct($ionicProfile, $ionicAPIToken)
+    public function __construct($ionicProfile, $IonicCloudToken)
     {
-        parent::__construct($ionicProfile, $ionicAPIToken);
+        parent::__construct($ionicProfile, $IonicCloudToken);
         $this->ionicProfile = $ionicProfile;
         $this->requestData = ['profile' => $this->ionicProfile];
     }
@@ -81,7 +83,7 @@ class Notifications extends Request {
 
         // sound
         $this->requestData['notification']['android']['sound'] = $sound;
-    	$this->requestData['notification']['ios']['sound'] = $sound;
+    	  $this->requestData['notification']['ios']['sound'] = $sound;
     }
 
     /**
@@ -98,7 +100,7 @@ class Notifications extends Request {
             $this->requestData
         );
         $this->resetRequestData();
-	    return $response;
+	      return $response;
     }
 
     /**

@@ -1,13 +1,13 @@
 <?php
 
-namespace Tomloprod\IonicApi\Api;
+namespace Tomloprod\IonicCloud;
 
-use Tomloprod\IonicApi\Exception\RequestException;
+use Tomloprod\IonicCloud\Exception\RequestException;
 
 /**
  * Class Request
  *
- * @package Tomloprod\IonicApi\Api
+ * @package Tomloprod\IonicCloud\Api
  * @author Tomás L.R (@tomloprod)
  * @author Ramon Carreras (@ramoncarreras)
  */
@@ -30,17 +30,17 @@ class Request {
 
     // Required for Authorization
     private $ionicProfile;
-    private $ionicAPIToken;
+    private $IonicCloudToken;
 
     /**
      * Request constructor.
      *
      * @param string $ionicProfile
-     * @param string $ionicAPIToken
+     * @param string $IonicCloudToken
      */
-    public function __construct($ionicProfile, $ionicAPIToken) {
+    public function __construct($ionicProfile, $IonicCloudToken) {
         $this->ionicProfile = $ionicProfile;
-        $this->ionicAPIToken = $ionicAPIToken;
+        $this->IonicCloudToken = $IonicCloudToken;
     }
 
     /**
@@ -61,7 +61,7 @@ class Request {
 
         $curlHandler = curl_init();
 
-        $authorization = sprintf('Bearer %s', $this->ionicAPIToken);
+        $authorization = sprintf('Bearer %s', $this->IonicCloudToken);
 
         $headers = [
             'Authorization:' . $authorization,
@@ -160,82 +160,5 @@ class Request {
     private function isServerErrorResponse($statusCode) {
         return $statusCode >= 500 && $statusCode < 600;
     }
-
-    /**
-     * Is response informative?
-     *
-     * @private
-     * @param number $statusCode
-     * @return bool
-     */
-    /*private function isInformationalResponse($statusCode) {
-        return $statusCode >= 100 && $statusCode < 200;
-    }*/
-
-    /**
-     * Is response successful?
-     *
-     * @private
-     * @param number $statusCode
-     * @return bool
-     */
-    /*private function isSuccessfulResponse($statusCode) {
-        return $statusCode >= 200 && $statusCode < 300;
-    }*/
-
-    /**
-     * Is the response a redirect?
-     *
-     * @private
-     * @param number $statusCode
-     * @return bool
-     */
-    /*private function isRedirectionResponse($statusCode) {
-        return $statusCode >= 300 && $statusCode < 400;
-    }*/
-
-    /**
-     * Is the response a Auth error?
-     *
-     * @private
-     * @param number $statusCode
-     * @return bool
-     */
-    /*private function isAuthErrorResponse($statusCode) {
-        return 401 === $statusCode;
-    }*/
-
-    /**
-     * Is the response forbidden?
-     *
-     * @private
-     * @param number $statusCode
-     * @return bool
-     */
-    /*private function isForbiddenResponse($statusCode) {
-        return 403 === $statusCode;
-    }*/
-
-    /**
-     * Is the response a not found error?
-     *
-     * @private
-     * @param number $statusCode
-     * @return bool
-     */
-    /*private function isNotFoundResponse($statusCode) {
-        return 404 === $statusCode;
-    }*/
-
-    /**
-     * Is the response empty?
-     *
-     * @private
-     * @param number $statusCode
-     * @return bool
-     */
-    /*private function isEmptyResponse($statusCode) {
-        return in_array($statusCode, array(204, 304));
-    }*/
 
 }

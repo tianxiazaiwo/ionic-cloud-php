@@ -1,11 +1,11 @@
 <?
-use Tomloprod\IonicApi\Exception\RequestException;
-use Tomloprod\IonicApi\Push;
+use Tomloprod\IonicCloud\Exception\RequestException;
+use Tomloprod\IonicCloud\IonicCloudApi;
 
 $ionicProfile = "yourIonicProfile";
-$ionicAPIToken = "youtIonicApiToken";
+$IonicCloudToken = "youtIonicCloudToken";
 
-$ionicPushApi = new Push($ionicProfile, $ionicAPIToken);
+$ionicCloudApi = new IonicCloudApi($ionicProfile, $IonicCloudToken);
 ?>
 
 <h1>List all device tokens:</h1>
@@ -15,7 +15,7 @@ $ionicPushApi = new Push($ionicProfile, $ionicAPIToken);
     $desiredUserId = "e5axv...";
 
     try {
-        $response = $ionicPushApi->deviceTokens->paginatedList([
+        $response = $ionicCloudApi->push->deviceTokens->paginatedList([
             'show_invalid' => 1,
             'user_id' => $desiredUserId,
             'page_size' => 4,
@@ -51,7 +51,7 @@ $ionicPushApi = new Push($ionicProfile, $ionicAPIToken);
 <ul>
     <?
     try {
-        $response = $ionicPushApi->deviceTokens->retrieve("4c4ea40...");
+        $response = $ionicCloudApi->push->deviceTokens->retrieve("4c4ea40...");
         ?>
         <li>
             <p><b>Device token ID:</b> <?= $response->data['id']; ?> </p>
