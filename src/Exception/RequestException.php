@@ -6,8 +6,6 @@ namespace Tomloprod\IonicCloud\Exception;
  * Class RequestException
  *
  * @package Tomloprod\IonicApi\Exception
- * @author Tomás L.R (@tomloprod)
- * @author Ramon Carreras (@ramoncarreras)
  */
 class RequestException extends \Exception {
 
@@ -19,7 +17,7 @@ class RequestException extends \Exception {
      *
      * @var array
      */
-    public static $statusTexts = array(
+    public static $statusTexts = [
         100 => 'Continue',
         101 => 'Switching Protocols',
         102 => 'Processing',            // RFC2518
@@ -81,7 +79,7 @@ class RequestException extends \Exception {
         508 => 'Loop Detected',                                               // RFC5842
         510 => 'Not Extended',                                                // RFC2774
         511 => 'Network Authentication Required',                             // RFC6585
-    );
+    ];
 
     /**
      * The type of error that occurred.
