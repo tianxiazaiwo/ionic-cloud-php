@@ -1,6 +1,6 @@
 
-> ### WARNING:
-> **This repository is under development. If you need a library to work with the Ionic Push API, use this: https://github.com/tomloprod/ionic-push-php**
+> ### ADVISE:
+> **If you only need a library to work with the Ionic Push API, use this: https://github.com/tomloprod/ionic-push-php instead**
 
 
 # ionic-cloud-php [![Release](https://img.shields.io/github/release/tomloprod/ionic-cloud-php.svg)](https://github.com/tomloprod/ionic-cloud-php) [![Join the chat at https://gitter.im/tomloprod/ionic-cloud-php](https://badges.gitter.im/tomloprod/ionic-cloud-php.svg)](https://gitter.im/tomloprod/ionic-cloud-php?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![License](https://img.shields.io/github/license/tomloprod/ionic-cloud-php.svg)](http://www.opensource.org/licenses/mit-license.php)
