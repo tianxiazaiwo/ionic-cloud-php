@@ -2,10 +2,6 @@
 
 namespace Tomloprod\IonicCloud\PushApi;
 
-use Tomloprod\IonicCloud\PushApi\Notifications;
-use Tomloprod\IonicCloud\PushApi\DeviceTokens;
-use Tomloprod\IonicCloud\PushApi\Messages;
-
   /**
   * Ionic API Push
   *

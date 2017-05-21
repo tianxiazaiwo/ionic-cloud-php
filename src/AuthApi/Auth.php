@@ -57,7 +57,7 @@ class Auth extends Request {
      /**
       * Retrieve a User
       * @link https://docs.ionic.io/api/endpoints/auth.html#get-users-user_uuid Ionic documentation
-      * @param string $deviceToken - Device token
+      * @param string $userUUID - user UUID
       * @param boolean $customData - If true, will return the user custom data.
       * @return object $response
       */
@@ -73,10 +73,10 @@ class Auth extends Request {
       * Sets a new custom data object for a User.
       * The JSON body sent to this endpoint will become the new custom data object for the user.
       *
-      * @param string $notificationId - Notification id
+      * @param string $userUUID - User UUID
       * @return object
       */
-     public function replace($userUUID) {
+     /*public function replace($userUUID) {
          $response = $this->sendRequest(
              self::METHOD_PUT,
              str_replace(':user_uuid', $userUUID, self::$endPoints['replaceCustom']),
@@ -84,7 +84,7 @@ class Auth extends Request {
          );
          $this->resetRequestData();
          return $response;
-     }
+     }*/
 
      /**
       * Update a User
@@ -114,6 +114,5 @@ class Auth extends Request {
              str_replace(':user_uuid', $userUUID, self::$endPoints['delete'])
          );
      }
-
 
 }

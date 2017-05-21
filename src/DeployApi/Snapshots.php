@@ -38,7 +38,7 @@ class Snapshots extends Request {
      * Update a Snapshot
      *
      * @link https://docs.ionic.io/api/endpoints/deploy.html#patch-channels-channel_id Ionic documentation
-     * @param string $channelId - Channel id
+     * @param string $snapshotId - Snapshot id
      * @param array $parameters
      * @return object $response
      */

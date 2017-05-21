@@ -2,15 +2,11 @@
 
 namespace Tomloprod\IonicCloud\DeployApi;
 
-use Tomloprod\IonicCloud\DeployApi\Channels;
-use Tomloprod\IonicCloud\DeployApi\Deploys;
-use Tomloprod\IonicCloud\DeployApi\Snapshots;
-
-  /**
-  * Ionic API Deploy
-  *
-  * @package Tomloprod\IonicCloud\DeployApi
-  */
+/**
+ * Ionic API Deploy
+ *
+ * @package Tomloprod\IonicCloud\DeployApi
+ */
 class Deploy {
 
     /**
@@ -26,7 +22,7 @@ class Deploy {
      * @var Deploys
      */
     public $deploys;
-  
+
     /**
      * Snapshots class instance.
      *
