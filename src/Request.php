@@ -8,8 +8,6 @@ use Tomloprod\IonicCloud\Exception\RequestException;
  * Class Request
  *
  * @package Tomloprod\IonicCloud\Api
- * @author Tomás L.R (@tomloprod)
- * @author Ramon Carreras (@ramoncarreras)
  */
 class Request {
 

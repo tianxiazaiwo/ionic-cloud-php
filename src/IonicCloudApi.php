@@ -3,9 +3,8 @@
 namespace Tomloprod\IonicCloud;
 
 use Tomloprod\IonicCloud\PushApi\Push;
-
-// TODO: use Tomloprod\IonicCloud\AuthApi\Auth;
-// TODO: use Tomloprod\IonicCloud\DeployApi\Deploy;
+use Tomloprod\IonicCloud\DeployApi\Deploy;
+use Tomloprod\IonicCloud\AuthApi\Auth;
 
 /**
  * Ionic Cloud Api
@@ -13,8 +12,6 @@ use Tomloprod\IonicCloud\PushApi\Push;
  * @version 1.0.0
  * @package Tomloprod\IonicCloud
  * @category  Library
- * @author  Tomás L.R (@tomloprod)
- * @author  Ramon Carreras (@ramoncarreras)
  */
 class IonicCloudApi {
 
@@ -26,29 +23,30 @@ class IonicCloudApi {
     public $push;
 
     /**
-     * Auth class instance.
-     *
-     * @var Auth
-     */
-    //public $auth;
-
-    /**
      * Deploy class instance.
      *
      * @var Deploy
      */
-    //public $deploy;
+    public $deploy;
 
     /**
-     * Push constructor.
+     * Auth class instance.
+     *
+     * @var Auth
+     */
+    public $auth;
+
+
+    /**
+     * Ionic cloud api constructor.
      *
      * @param $ionicProfile
      * @param $IonicCloudToken
      */
     public function __construct($ionicProfile, $IonicCloudToken) {
         $this->push = new Push($ionicProfile, $IonicCloudToken);
-        // TODO: $this->auth = new Auth($ionicProfile, $IonicCloudToken);
-        // TODO: $this->deploy = new Deploy($ionicProfile, $IonicCloudToken);
+        $this->deploy = new Deploy($ionicProfile, $IonicCloudToken);
+        $this->auth = new Auth($ionicProfile, $IonicCloudToken);
     }
 
 }

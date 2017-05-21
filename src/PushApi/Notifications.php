@@ -28,19 +28,6 @@ class Notifications extends Request {
     ];
 
     /**
-     * Notifications constructor.
-     *
-     * @param string $ionicProfile
-     * @param string $IonicCloudToken
-     */
-    public function __construct($ionicProfile, $IonicCloudToken)
-    {
-        parent::__construct($ionicProfile, $IonicCloudToken);
-        $this->ionicProfile = $ionicProfile;
-        $this->requestData = ['profile' => $this->ionicProfile];
-    }
-
-    /**
      * Set notification config.
      *
      * @link https://docs.ionic.io/api/endpoints/push.html#post-notifications Ionic documentation
