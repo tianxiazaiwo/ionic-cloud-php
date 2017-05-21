@@ -4,6 +4,7 @@ namespace Tomloprod\IonicCloud\DeployApi;
 
 use Tomloprod\IonicCloud\DeployApi\Channels;
 use Tomloprod\IonicCloud\DeployApi\Deploys;
+use Tomloprod\IonicCloud\DeployApi\Snapshots;
 
   /**
   * Ionic API Deploy
@@ -25,6 +26,13 @@ class Deploy {
      * @var Deploys
      */
     public $deploys;
+  
+    /**
+     * Snapshots class instance.
+     *
+     * @var Deploys
+     */
+    public  $snapshots;
 
 
     /**
@@ -36,6 +44,7 @@ class Deploy {
     public function __construct($ionicProfile, $IonicCloudToken) {
         $this->channels = new Channels($ionicProfile, $IonicCloudToken);
         $this->deploys = new Deploys($ionicProfile, $IonicCloudToken);
+        $this->snapshots = new Snapshots($ionicProfile, $IonicCloudToken);
     }
 
 }
