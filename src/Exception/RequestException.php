@@ -1,6 +1,6 @@
 <?php
 
-namespace Tomloprod\IonicApi\Exception;
+namespace Tomloprod\IonicCloud\Exception;
 
 /**
  * Class RequestException
