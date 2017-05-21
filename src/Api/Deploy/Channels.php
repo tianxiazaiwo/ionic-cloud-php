@@ -1,8 +1,8 @@
 <?php
 
-namespace Tomloprod\IonicCloud\DeployApi;
+namespace Tomloprod\IonicCloud\Api\Deploy;
 
-use Tomloprod\IonicCloud\Request;
+use Tomloprod\IonicCloud\Request\Request;
 
 /**
  * Class Channels
@@ -10,7 +10,7 @@ use Tomloprod\IonicCloud\Request;
  * Stores ionic deploy api methods related to channels.
  * More info: https://docs.ionic.io/api/endpoints/deploy.html
  *
- * @package Tomloprod\IonicCloud\DeployApi
+ * @package Tomloprod\IonicCloud\Deploy
  */
 class Channels extends Request {
 

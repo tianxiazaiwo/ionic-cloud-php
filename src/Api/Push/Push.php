@@ -1,11 +1,11 @@
 <?php
 
-namespace Tomloprod\IonicCloud\PushApi;
+namespace Tomloprod\IonicCloud\Api\Push;
 
   /**
   * Ionic API Push
   *
-  * @package Tomloprod\IonicCloud\PushApi
+  * @package Tomloprod\IonicCloud\Api\Push
   * @author Tomás L.R (@tomloprod)
   * @author Ramon Carreras (@ramoncarreras)
   */

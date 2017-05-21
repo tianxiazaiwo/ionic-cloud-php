@@ -2,9 +2,9 @@
 
 namespace Tomloprod\IonicCloud;
 
-use Tomloprod\IonicCloud\PushApi\Push;
-use Tomloprod\IonicCloud\DeployApi\Deploy;
-use Tomloprod\IonicCloud\AuthApi\Auth;
+use Tomloprod\IonicCloud\Api\Auth\Auth,
+    Tomloprod\IonicCloud\Api\Deploy\Deploy,
+    Tomloprod\IonicCloud\Api\Push\Push;
 
 /**
  * Ionic Cloud Api

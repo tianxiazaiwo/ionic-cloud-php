@@ -1,11 +1,11 @@
 <?php
 
-namespace Tomloprod\IonicCloud\DeployApi;
+namespace Tomloprod\IonicCloud\Api\Deploy;
 
 /**
  * Ionic API Deploy
  *
- * @package Tomloprod\IonicCloud\DeployApi
+ * @package Tomloprod\IonicCloud\Api\Deploy
  */
 class Deploy {
 
@@ -26,7 +26,7 @@ class Deploy {
     /**
      * Snapshots class instance.
      *
-     * @var Deploys
+     * @var Snapshots
      */
     public  $snapshots;
 

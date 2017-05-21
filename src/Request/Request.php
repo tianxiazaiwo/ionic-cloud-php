@@ -1,13 +1,11 @@
 <?php
 
-namespace Tomloprod\IonicCloud;
-
-use Tomloprod\IonicCloud\Exception\RequestException;
+namespace Tomloprod\IonicCloud\Request;
 
 /**
  * Class Request
  *
- * @package Tomloprod\IonicCloud\Api
+ * @package Tomloprod\IonicCloud\Request
  */
 class Request {
 

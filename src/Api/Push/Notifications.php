@@ -1,8 +1,8 @@
 <?php
 
-namespace Tomloprod\IonicCloud\PushApi;
+namespace Tomloprod\IonicCloud\Api\Push;
 
-use Tomloprod\IonicCloud\Request;
+use Tomloprod\IonicCloud\Request\Request;
 
 /**
  * Class Notifications
@@ -10,7 +10,7 @@ use Tomloprod\IonicCloud\Request;
  * Stores ionic push api methods related to notifications collection.
  * More info: https://docs.ionic.io/api/endpoints/push.html
  *
- * @package Tomloprod\IonicCloud\PushApi
+ * @package Tomloprod\IonicCloud\Api\Push
  * @author Tomás L.R (@tomloprod)
  * @author Ramon Carreras (@ramoncarreras)
  */

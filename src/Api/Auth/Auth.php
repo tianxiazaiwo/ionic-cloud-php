@@ -1,16 +1,16 @@
 <?php
 
-namespace Tomloprod\IonicCloud\AuthApi;
+namespace Tomloprod\IonicCloud\Api\Auth;
 
-use Tomloprod\IonicCloud\Request;
+use Tomloprod\IonicCloud\Request\Request;
 
 /**
- * Class Snapshots
+ * Class Auth
  *
  * Stores ionic deploy api methods related to Auth.
  * More info: https://docs.ionic.io/api/endpoints/auth.html
  *
- * @package Tomloprod\IonicCloud\AuthApi
+ * @package Tomloprod\IonicCloud\Api\Auth
  */
 class Auth extends Request {
 
@@ -70,7 +70,7 @@ class Auth extends Request {
      }
 
      /**
-      * Sets a new custom data object for a User.
+      * TODO: Sets a new custom data object for a User.
       * The JSON body sent to this endpoint will become the new custom data object for the user.
       *
       * @param string $userUUID - User UUID

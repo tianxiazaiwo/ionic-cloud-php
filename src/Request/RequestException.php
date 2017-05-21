@@ -1,13 +1,15 @@
 <?php
 
-namespace Tomloprod\IonicCloud\Exception;
+namespace Tomloprod\IonicCloud\Request;
+
+use Exception;
 
 /**
  * Class RequestException
  *
- * @package Tomloprod\IonicApi\Exception
+ * @package Tomloprod\IonicCloud\Request
  */
-class RequestException extends \Exception {
+class RequestException extends Exception {
 
     /**
      * Status codes translation table
