@@ -12,7 +12,7 @@ use Tomloprod\IonicCloud\Request;
  *
  * @package Tomloprod\IonicCloud\DeployApi
  */
-class Desploys extends Request {
+class Deploys extends Request {
 
     private static $endPoints = [
         'list' => '/deploys', // GET
