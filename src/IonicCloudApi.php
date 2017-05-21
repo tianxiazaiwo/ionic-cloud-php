@@ -9,7 +9,7 @@ use Tomloprod\IonicCloud\AuthApi\Auth;
 /**
  * Ionic Cloud Api
  *
- * @version 1.0.0
+ * @version 1.0.1
  * @package Tomloprod\IonicCloud
  * @category  Library
  */
